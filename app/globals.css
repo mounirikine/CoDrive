@@ -11,6 +11,39 @@
     @apply bg-white text-dark-200 min-h-screen;
   }
 
+  .hero{
+    background-image: url('https://cdn.prod.website-files.com/644bdc09dc06a84e58e7e48e/644c4066d06aa4685be6a819_hero-section-bg-image-home-v1-techflow-x-webflow-template-p-2000.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+
+
+  
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
   /* Remove scrollbar */
   .remove-scrollbar::-webkit-scrollbar {
     width: 0px;
