@@ -32,7 +32,7 @@ export const Chart = ({ used = 0 }: { used: number }) => {
   const chartData = [{ storage: "used", 10: used, fill: "white" }];
 
   return (
-    <Card className="chart">
+    <Card className="chart shadow-lg">
       <CardContent className="flex-1 p-0">
         <ChartContainer config={chartConfig} className="chart-container">
           <RadialBarChart

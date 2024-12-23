@@ -189,14 +189,14 @@ export const getUsageSummary = (totalSpace: any) => {
       title: "Documents",
       size: totalSpace.document.size,
       latestDate: totalSpace.document.latestDate,
-      icon: "/assets/icons/file-document-light.svg",
+      icon: "https://png.pngtree.com/png-clipart/20230811/original/pngtree-security-data-icon-internet-vector-picture-image_10397465.png",
       url: "/documents",
     },
     {
       title: "Images",
       size: totalSpace.image.size,
       latestDate: totalSpace.image.latestDate,
-      icon: "/assets/icons/file-image-light.svg",
+      icon: "https://icon-library.com/images/image-icon-png/image-icon-png-6.jpg",
       url: "/images",
     },
     {
@@ -206,14 +206,14 @@ export const getUsageSummary = (totalSpace: any) => {
         totalSpace.video.latestDate > totalSpace.audio.latestDate
           ? totalSpace.video.latestDate
           : totalSpace.audio.latestDate,
-      icon: "/assets/icons/file-video-light.svg",
+      icon: "https://www.freeiconspng.com/thumbs/video-icon/video-icon-1.png",
       url: "/media",
     },
     {
       title: "Others",
       size: totalSpace.other.size,
       latestDate: totalSpace.other.latestDate,
-      icon: "/assets/icons/file-other-light.svg",
+      icon: "https://cdn-icons-png.flaticon.com/256/8815/8815177.png",
       url: "/others",
     },
   ];

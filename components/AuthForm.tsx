@@ -120,9 +120,9 @@ const AuthForm = ({ type }: { type: FormType }) => {
             )}
           />
 
-          <Button
+          <button
             type="submit"
-            className="form-submit-button"
+            className=" bg-[#5ea977] text-white  py-3  rounded-full font-semibold transition-all hover:bg-black flex items-center justify-center"
             disabled={isLoading}
           >
             {type === "sign-in" ? "Sign In" : "Sign Up"}
@@ -136,7 +136,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
                 className="ml-2 animate-spin"
               />
             )}
-          </Button>
+          </button>
 
           {errorMessage && <p className="error-message">*{errorMessage}</p>}
 

@@ -1,6 +1,8 @@
+'use client'
+
 import React from 'react'
 
-const Pricing = () => {
+const pricing = () => {
   return (
     <>
     <section className="bg-white :bg-gray-900">
@@ -137,4 +139,4 @@ const Pricing = () => {
   )
 }
 
-export default Pricing
+export default pricing

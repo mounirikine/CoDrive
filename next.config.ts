@@ -17,6 +17,7 @@ const nextConfig: NextConfig = {
     },
   },
   images: {
+    domains: ['png.pngtree.com','icon-library.com','www.freeiconspng.com','cdn-icons-png.flaticon.com'],
     remotePatterns: [
       {
         protocol: "https",
