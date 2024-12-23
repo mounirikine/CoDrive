@@ -56,7 +56,7 @@ const Dashboard = async () => {
         ) : (
           <p className="empty-list">No files uploaded</p>
         )}
-      </section>
+      </section> 
       <section>
         <Chart used={totalSpace.used} />
 
