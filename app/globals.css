@@ -254,7 +254,7 @@
     @apply relative mt-6 rounded-[20px] lg:h-[200px] p-5 transition-all hover:scale-105 !important;
   }
   .summary-type-icon {
-    @apply absolute   z-10 w-[80px] object-contain !important;
+    @apply absolute   z-10  w-[80px] object-contain !important;
   }
   .summary-type-size {
     @apply text-white relative z-20 mt-[50%] w-full text-right  !important;

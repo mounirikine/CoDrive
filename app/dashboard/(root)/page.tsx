@@ -77,7 +77,7 @@ const Dashboard = async () => {
                   </h4>
                 </div>
 
-                <h5 className=" font-semibold text-white ">{summary.title}</h5>
+                <h5 className=" font-semibold -translate-y-16 text-white ">{summary.title}</h5>
                 <Separator className="bg-light-400" />
                 <FormattedDateTime
                   date={summary.latestDate}
