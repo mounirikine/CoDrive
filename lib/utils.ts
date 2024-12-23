@@ -189,15 +189,15 @@ export const getUsageSummary = (totalSpace: any) => {
       title: "Documents",
       size: totalSpace.document.size,
       latestDate: totalSpace.document.latestDate,
-      icon: "https://png.pngtree.com/png-clipart/20230811/original/pngtree-security-data-icon-internet-vector-picture-image_10397465.png",
-      url: "/documents",
+      icon: "/assets/icons/file-document-light.svg",
+      url: "/dashboard/documents",
     },
     {
       title: "Images",
       size: totalSpace.image.size,
       latestDate: totalSpace.image.latestDate,
-      icon: "https://icon-library.com/images/image-icon-png/image-icon-png-6.jpg",
-      url: "/images",
+      icon: "/assets/icons/file-image-light.svg",
+      url: "/dashboard/images",
     },
     {
       title: "Media",
@@ -206,15 +206,15 @@ export const getUsageSummary = (totalSpace: any) => {
         totalSpace.video.latestDate > totalSpace.audio.latestDate
           ? totalSpace.video.latestDate
           : totalSpace.audio.latestDate,
-      icon: "https://www.freeiconspng.com/thumbs/video-icon/video-icon-1.png",
-      url: "/media",
+      icon: "/assets/icons/file-video-light.svg",
+      url: "/dashboard/media",
     },
     {
       title: "Others",
       size: totalSpace.other.size,
       latestDate: totalSpace.other.latestDate,
-      icon: "https://cdn-icons-png.flaticon.com/256/8815/8815177.png",
-      url: "/others",
+      icon: "/assets/icons/file-other-light.svg",
+      url: "/dashboard/others",
     },
   ];
 };

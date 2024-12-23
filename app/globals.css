@@ -246,18 +246,13 @@
     @apply mt-6 grid grid-cols-1 gap-4 xl:mt-10 xl:grid-cols-2 xl:gap-9 !important;
   }
   .dashboard-summary-card {
-    background-image: url('https://cdn4.iconfinder.com/data/icons/small-n-flat/24/folder-green-512.png');
-    background-size: cover;
-    
-    width: 100%;
-    
-    @apply relative mt-6 rounded-[20px] lg:h-[200px] p-5 transition-all hover:scale-105 !important;
+    @apply relative mt-6 rounded-[20px] bg-white p-5 transition-all hover:scale-105 !important;
   }
   .summary-type-icon {
-    @apply absolute   z-10  w-[80px] object-contain !important;
+    @apply absolute -left-3 top-[-25px] z-10 w-[190px] object-contain !important;
   }
   .summary-type-size {
-    @apply text-white relative z-20 mt-[50%] w-full text-right  !important;
+    @apply h4 relative z-20 w-full text-right !important;
   }
   .summary-type-title {
     @apply h5 relative z-20 text-center !important;
@@ -398,7 +393,7 @@
 
   /* Header */
   .header {
-    @apply hidden items-center justify-between gap-5 py-5 px-5  lg:px-10 sm:flex lg:py-7 xl:gap-10 !important;
+    @apply hidden items-center justify-between gap-5 p-5 sm:flex lg:py-7 xl:gap-10 !important;
   }
   .header-wrapper {
     @apply flex-center min-w-fit gap-4 !important;

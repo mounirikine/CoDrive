@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { signOutUser } from "@/lib/actions/user.actions";
-import { CircleArrowLeft } from "lucide-react";
+import { CircleArrowLeft, LogOut } from "lucide-react";
 
 interface Props {
   fullName: string;
@@ -84,8 +84,11 @@ const Sidebar = ({ fullName, avatar, email }: Props) => {
               await signOutUser();
             }}
           >
-            <button type="submit" className="font-bold bg-[#5ea977] text-white outline-none w-full flex items-center mt-5 transition-all justify-center rounded-full py-3 hover:bg-black ">
+            <button type="submit" className="font-bold bg-[#5ea977] text-white outline-none w-full  hidden lg:flex items-center mt-5 transition-all justify-center rounded-full py-3 hover:bg-black ">
               Logout 
+            </button>
+            <button type="submit" className="font-bold  bg-[#5ea977] text-white outline-none w-full flex lg:hidden items-center mt-5 transition-all justify-center rounded-full py-3 hover:bg-black ">
+            <LogOut />
             </button>
           </form>
       </nav>
