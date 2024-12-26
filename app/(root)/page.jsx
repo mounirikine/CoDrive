@@ -8,7 +8,8 @@ import Pricing from "../../components/Pricing";
 import Footer from "../../components/Footer";
 import { ArrowRight, CircleCheck } from "lucide-react";
 import { motion } from "framer-motion";
-
+import heroImg from "../../public/assets/images/hero.png";
+import Image from "next/image";
 const page = () => {
   const containerVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -57,7 +58,7 @@ const page = () => {
           animate="visible"
         >
           <motion.div
-            className="w-full lg:w-6/12 md:px-4"
+            className="w-full lg:w-7/12 md:px-4"
             variants={textVariants}
           >
             <motion.h1
@@ -93,17 +94,12 @@ const page = () => {
             </motion.div>
           </motion.div>
           <motion.div
-            className="w-full lg:w-6/12 relative mt-2 md:mt-10 lg:mt-0"
+            className="w-full lg:w-5/12 relative mt-2 md:mt-10 lg:mt-0"
             variants={imageVariants}
           >
-            <motion.img
-              src="https://cdn.prod.website-files.com/644bdc09dc06a84e58e7e48e/644c405cfe8d89249d36fa52_gain-insights-with-website-analytics-image-home-v1-techflow-x-webflow-template.png"
-              className="rounded-xl shadow-2xl w-full"
-              alt=""
-            />
-            <motion.img
-              className="absolute top-72 hidden lg:block -left-5 rounded-xl shadow-xl w-44"
-              src="https://cdn.prod.website-files.com/644bdc09dc06a84e58e7e48e/6451e516ca1acb4697c0e298_measure-your-website-success-bottom-image-techflow-x-webflow-template.png"
+            <img
+              src="https://cdn.prod.website-files.com/6620f09755613ac1296ca242/6620fa0a3f888109a9d56a51_shape-1%20(2)-p-500.png"
+              className="rounded-xl w-full smooth-bounce"
               alt=""
             />
           </motion.div>
@@ -114,7 +110,7 @@ const page = () => {
           initial="hidden"
           animate="visible"
         >
-            <img
+          <img
             src="https://cdn.prod.website-files.com/66d40a2948a9f7c769434696/66d53321ed86a854a77d0f05_Fictional%20company%20logo.svg"
             alt=""
           />
@@ -143,7 +139,7 @@ const page = () => {
 
       <HowItWorksSection />
 
-      <Pricing />
+
       <Testemotional />
 
       <style>
@@ -158,45 +154,45 @@ const page = () => {
       </style>
 
       <motion.section
-      initial="hidden"
-      animate="visible"
-      variants={containerVariants}
-      className="hero-badge w-10/12 mx-auto py-10 md:py-24 px-3 md:px-20 rounded-2xl flex flex-col lg:flex-row items-center justify-between mb-10 bg-gradient-to-r from-green-400 to-blue-500 shadow-lg"
-    >
-      {/* Left Content Section */}
-      <motion.div
-        variants={itemVariants}
-        className="md:w-6/12 text-lg font-semibold text-center lg:text-left"
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
+        className="hero-badge w-10/12 mx-auto py-10 md:py-24 px-3 md:px-20 rounded-2xl flex flex-col lg:flex-row items-center justify-between mb-10 bg-gradient-to-r from-green-400 to-blue-500 shadow-lg"
       >
-        <h1 className="text-xl md:text-4xl text-white font-semibold mb-4 leading-tight">
-          Get in Touch: We're Here to Help with Any Questions or Support
-        </h1>
-      </motion.div>
+        {/* Left Content Section */}
+        <motion.div
+          variants={itemVariants}
+          className="md:w-6/12 text-lg font-semibold text-center lg:text-left"
+        >
+          <h1 className="text-xl md:text-4xl text-white font-semibold mb-4 leading-tight">
+            Get in Touch: We're Here to Help with Any Questions or Support
+          </h1>
+        </motion.div>
 
-      {/* Right Input Section */}
-      <motion.div
-        variants={itemVariants}
-        className="hidden lg:block md:w-6/12"
-      >
-        <div className="flex flex-col lg:flex-row items-center bg-white w-full py-3 md:rounded-full px-3 shadow-md">
-          <motion.input
-            type="text"
-            variants={itemVariants}
-            className="px-4 bg-transparent text-black md:w-9/12 outline-none border-none placeholder-gray-500"
-            placeholder="Enter your message"
-          />
-          <motion.button
-            variants={itemVariants}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="p-5 md:p-3 bg-[#5ea977] hover:bg-green-600 text-lg flex items-center justify-center w-full md:w-3/12 text-white font-semibold rounded-full transition-all duration-300 ease-in-out"
-          >
-            Submit
-            <ArrowRight className="ml-2 text-sm" />
-          </motion.button>
-        </div>
-      </motion.div>
-    </motion.section>
+        {/* Right Input Section */}
+        <motion.div
+          variants={itemVariants}
+          className="hidden lg:block md:w-6/12"
+        >
+          <div className="flex flex-col lg:flex-row items-center bg-white w-full py-3 md:rounded-full px-3 shadow-md">
+            <motion.input
+              type="text"
+              variants={itemVariants}
+              className="px-4 bg-transparent text-black md:w-9/12 outline-none border-none placeholder-gray-500"
+              placeholder="Enter your message"
+            />
+            <motion.button
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="p-5 md:p-3 bg-[#5ea977] hover:bg-green-600 text-lg flex items-center justify-center w-full md:w-3/12 text-white font-semibold rounded-full transition-all duration-300 ease-in-out"
+            >
+              Submit
+              <ArrowRight className="ml-2 text-sm" />
+            </motion.button>
+          </div>
+        </motion.div>
+      </motion.section>
       <Footer />
     </>
   );

@@ -16,9 +16,22 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+ 
   }
 
-
+  .smooth-bounce {
+    animation: bounce 2s infinite ease-in-out;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
   
 .swiper {
   width: 100%;

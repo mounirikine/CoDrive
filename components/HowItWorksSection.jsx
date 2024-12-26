@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, CircleCheck } from "lucide-react";
+import Img from "../public/assets/images/hero.png";
+import Image from "next/image";
 
 const HowItWorksSection = () => {
   // Animation variants for staggered effects
@@ -116,118 +118,114 @@ const HowItWorksSection = () => {
       </motion.section>
 
       <motion.section
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.3 }}
-      variants={containerVariants}
-      className="container mx-auto py-10 md:py-24 px-6"
-    >
-      <main className="flex items-center justify-between flex-col lg:flex-row">
-        {/* Left Image Section */}
-        <motion.div
-          variants={itemVariants}
-          className="w-full lg:w-5/12 relative mt-2 md:mt-10 lg:mt-0"
-        >
-          <img
-            src="https://cdn.prod.website-files.com/644bdc09dc06a84e58e7e48e/644c405cfe8d89249d36fa52_gain-insights-with-website-analytics-image-home-v1-techflow-x-webflow-template.png"
-            className="rounded-xl shadow-2xl w-full"
-            alt="Primary illustration"
-          />
-          <img
-            className="absolute top-56 hidden lg:block -left-5 rounded-xl shadow-xl w-44"
-            src="https://cdn.prod.website-files.com/644bdc09dc06a84e58e7e48e/6451e516ca1acb4697c0e298_measure-your-website-success-bottom-image-techflow-x-webflow-template.png"
-            alt="Secondary illustration"
-          />
-        </motion.div>
-
-        {/* Right Content Section */}
-        <motion.div
-          variants={itemVariants}
-          className="w-full lg:w-7/12 mt-10 lg:mt-0 lg:pl-12"
-        >
-          <h1 className="text-2xl lg:text-5xl text-center lg:text-left font-bold text-gray-900 mt-4">
-            Your Files, Securely Stored and Easily Accessible
-          </h1>
-          <p className="text-sm lg:text-base text-center lg:text-left text-gray-700 mt-5 max-w-3xl mx-auto">
-            Our platform makes it simple to upload, store, and share your
-            documents securely. Whether you’re working solo or collaborating
-            with a team, we provide an intuitive and reliable solution for
-            managing your files.
-          </p>
-
-          <ul className="mt-10 space-y-4">
-            <motion.li
-              variants={itemVariants}
-              className="flex items-start text-gray-600 gap-2"
-            >
-              <CircleCheck color="#5ea977" />
-              Upload your files easily with drag-and-drop or manual selection.
-            </motion.li>
-            <motion.li
-              variants={itemVariants}
-              className="flex items-start text-gray-600 gap-2"
-            >
-              <CircleCheck color="#5ea977" />
-              Your documents are stored securely with top-notch encryption to
-              protect your data.
-            </motion.li>
-            <motion.li
-              variants={itemVariants}
-              className="flex items-start text-gray-600 gap-2"
-            >
-              <CircleCheck color="#5ea977" />
-              Share documents with anyone easily, with control over permissions.
-            </motion.li>
-          </ul>
-        </motion.div>
-      </main>
-    </motion.section>
-    <motion.section
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.3 }}
-      variants={containerVariants}
-      className="container mx-auto py-10 lg:py-24 px-6"
-    >
-      <main className="flex items-center justify-between flex-col lg:flex-row">
-        {/* Left Content Section */}
-        <motion.div
-          variants={itemVariants}
-          className="w-full lg:w-7/12 mt-10 lg:mt-0 lg:pl-12"
-        >
-          <h1 className="text-2xl lg:text-4xl text-center lg:text-left font-bold text-gray-900 mt-4">
-            Comprehensive File Access Monitoring for Enhanced Security
-          </h1>
-          <p className="text-sm lg:text-base text-center lg:text-left text-gray-700 mt-5 max-w-3xl mx-auto">
-            Our platform tracks and logs every file access event, providing
-            detailed insights on who accessed what, when, and from which
-            device. This robust monitoring ensures compliance, security, and
-            peace of mind for all users.
-          </p>
-          <motion.a
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={containerVariants}
+        className="container mx-auto py-10 md:py-24 px-6"
+      >
+        <main className="flex items-center justify-between flex-col lg:flex-row">
+          {/* Left Image Section */}
+          <motion.div
             variants={itemVariants}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 text-center py-3 w-10/12 md:w-4/12 mt-10 rounded-full font-semibold bg-black border-2 text-white border-black flex items-center justify-center gap-1"
-            href="/"
+            className="w-full lg:w-4/12 relative mt-2 md:mt-10 lg:mt-0"
           >
-            Get Started <ArrowRight />
-          </motion.a>
-        </motion.div>
+            <img
+              src="https://assets-global.website-files.com/65dca9c1ed650e9034c07c2a/65ddb01520625ae807739f5b_photo-1-p-800.jpg"
+              className="rounded-xl shadow-2xl w-full"
+              alt="Primary illustration"
+            />
+          </motion.div>
 
-        {/* Right Image Section */}
-        <motion.div
-          variants={itemVariants}
-          className="w-full lg:w-5/12 relative mt-5 md:mt-10 lg:mt-0"
-        >
-          <img
-            src="https://cdn.prod.website-files.com/669675662d419f003607555b/6697964809a5102d9555f5e7_man-p-800.webp"
-            className="w-full rounded-xl "
-            alt="File Access Monitoring"
-          />
-        </motion.div>
-      </main>
-    </motion.section>
+          {/* Right Content Section */}
+          <motion.div
+            variants={itemVariants}
+            className="w-full lg:w-8/12 mt-10 lg:mt-0 lg:pl-12"
+          >
+            <h1 className="text-2xl lg:text-5xl text-center lg:text-left font-bold text-gray-900 mt-4">
+              Your Files, Securely Stored and Easily Accessible
+            </h1>
+            <p className="text-sm lg:text-base text-center lg:text-left text-gray-700 mt-5 max-w-3xl mx-auto">
+              Our platform makes it simple to upload, store, and share your
+              documents securely. Whether you’re working solo or collaborating
+              with a team, we provide an intuitive and reliable solution for
+              managing your files.
+            </p>
+
+            <ul className="mt-10 space-y-4">
+              <motion.li
+                variants={itemVariants}
+                className="flex items-start text-gray-600 gap-2"
+              >
+                <CircleCheck color="#5ea977" />
+                Upload your files easily with drag-and-drop or manual selection.
+              </motion.li>
+              <motion.li
+                variants={itemVariants}
+                className="flex items-start text-gray-600 gap-2"
+              >
+                <CircleCheck color="#5ea977" />
+                Your documents are stored securely with top-notch encryption to
+                protect your data.
+              </motion.li>
+              <motion.li
+                variants={itemVariants}
+                className="flex items-start text-gray-600 gap-2"
+              >
+                <CircleCheck color="#5ea977" />
+                Share documents with anyone easily, with control over
+                permissions.
+              </motion.li>
+            </ul>
+          </motion.div>
+        </main>
+      </motion.section>
+      <motion.section
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={containerVariants}
+        className="container mx-auto py-10 lg:py-24 px-6"
+      >
+        <main className="flex items-center justify-between flex-col lg:flex-row">
+          {/* Left Content Section */}
+          <motion.div
+            variants={itemVariants}
+            className="w-full lg:w-7/12 mt-10 lg:mt-0 lg:pl-12"
+          >
+            <h1 className="text-2xl lg:text-4xl text-center lg:text-left font-bold text-gray-900 mt-4">
+              Comprehensive File Access Monitoring for Enhanced Security
+            </h1>
+            <p className="text-sm lg:text-base text-center lg:text-left text-gray-700 mt-5 max-w-3xl mx-auto">
+              Our platform tracks and logs every file access event, providing
+              detailed insights on who accessed what, when, and from which
+              device. This robust monitoring ensures compliance, security, and
+              peace of mind for all users.
+            </p>
+            <motion.a
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 text-center py-3 w-10/12 md:w-4/12 mt-10 rounded-full font-semibold bg-black border-2 text-white border-black flex items-center justify-center gap-1"
+              href="/"
+            >
+              Get Started <ArrowRight />
+            </motion.a>
+          </motion.div>
+
+          {/* Right Image Section */}
+          <motion.div
+            variants={itemVariants}
+            className="w-full lg:w-5/12 relative mt-5 md:mt-10 lg:mt-0"
+          >
+            <img
+              src="https://cdn.prod.website-files.com/669675662d419f003607555b/6697964809a5102d9555f5e7_man-p-800.webp"
+              className="w-full rounded-xl "
+              alt="File Access Monitoring"
+            />
+          </motion.div>
+        </main>
+      </motion.section>
     </>
   );
 };
